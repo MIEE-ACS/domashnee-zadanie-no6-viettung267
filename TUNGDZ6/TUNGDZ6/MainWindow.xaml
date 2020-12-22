@@ -1,0 +1,43 @@
+﻿<Window x:Class="TUNGDZ6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TUNGDZ6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="CB_Weapons" HorizontalAlignment="Left" Margin="61,84,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15">
+            <Label Content="Арбалет"/>
+            <Label Content="Автомат"/>
+            <Label Content="МБР"/>
+        </ComboBox>
+        <TextBox x:Name="dam_radius" HorizontalAlignment="Left" Height="23" Margin="236,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <TextBox x:Name="Rate_fire" HorizontalAlignment="Left" Height="23" Margin="441,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <TextBox x:Name="Re_speed" HorizontalAlignment="Left" Height="23" Margin="626,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <Label Content="Радиус поражения" HorizontalAlignment="Left" Margin="236,52,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <Label Content="Скорострельность" HorizontalAlignment="Left" Margin="431,52,0,0" VerticalAlignment="Top" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <Label Content="Скорость перезарядки" HorizontalAlignment="Left" Margin="613,52,0,0" VerticalAlignment="Top" Width="158" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="15"/>
+        <Button x:Name="ADD" Content="ADD" HorizontalAlignment="Left" Margin="302,139,0,0" VerticalAlignment="Top" Width="75" Click="ADD_Click"/>
+        <ListView x:Name="Listresult" HorizontalAlignment="Left" Height="174" Margin="10,235,0,0" VerticalAlignment="Top" Width="772">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="searchbt" Content="Search" HorizontalAlignment="Left" Margin="322,210,0,0" VerticalAlignment="Top" Width="100" Click="searchbt_Click"/>
+        <ComboBox x:Name="cbcategory" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="171" SelectionChanged="cbcategory_SelectionChanged">
+            <Label Content="радиус поражения &gt;="/>
+            <Label Content="тип оружия"/>
+        </ComboBox>
+        <TextBox x:Name="tbfind" HorizontalAlignment="Left" Height="23" Margin="209,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Visibility="Hidden"/>
+        <ComboBox x:Name="Typeweapons" HorizontalAlignment="Left" Margin="186,210,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden">
+            <Label Content="Холодное"/>
+            <Label Content="Огнестрельное"/>
+            <Label Content="Термоядерное"/>
+        </ComboBox>
+        <Button x:Name="Showbt" Content="SHOW" HorizontalAlignment="Left" Margin="431,139,0,0" VerticalAlignment="Top" Width="75" Click="Showbt_Click"/>
+
+    </Grid>
+</Window>
